@@ -1,0 +1,136 @@
+.header{
+    height:50px;
+    background:#428bca;
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.header>.info{
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    
+}
+
+.header>.info>p{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color:#fff;
+    font-size:14px;
+}
+
+.logout{
+    cursor: pointer;
+}
+.container_detail{
+    height: 100%;
+    display: flex;
+}
+.container_detail>.tabbar{
+    width:192px;
+    height: 100%;
+    border-right: 1px solid #f2f2f2;
+    flex-shrink: 0;
+}
+.container_detail>.tabbar>ul>li{
+    line-height: 50px;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid #f2f2f2;
+    cursor: pointer;
+}
+.container_detail>.tabbar>ul>.active{
+    background: #428bca;
+    color:#fff;
+}
+.container_detail>.content{
+    width: 100%;
+}
+.container_detail>.content>#jobList>.list{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container_detail>.content>.from{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_detail>.content>.from>form{
+    width: 70%;
+    margin-top: 30px;
+}
+
+
+/* job */
+
+#jobList{
+    display: flex;
+    flex-wrap: wrap;
+}
+.list_job{
+    width: 350px;
+    height:215px;
+    padding: 20px 18px 0px 18px;
+    border:1px solid #e1e1e1;
+    margin:30px;
+}
+
+.list_job>.job_des{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.list_job>.job_des>.job_ex{
+    width: 100%;
+}
+.list_job>.job_des>.job_name,.list_job>.job_des>.job_price{
+    line-height: 40px;
+}
+.list_job>.com_des{
+    border-top: 1px dashed #e1e1e1;
+    display: flex;
+    padding: 10px;
+    margin-top: 5px;
+}
+.list_job>.com_des>.company_logo,.list_job>.com_des>.company_logo>img{
+    width: 60px;
+    height: 60px;
+}
+.list_job>.com_des>.company_name{
+    line-height: 60px;
+    margin-left: 20px;
+}
+.operation{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+.operation>button{
+    margin-left: 10px;
+}
+
+
+
+#addJob{
+    margin-top:40px;
+}
+#addJob>div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addJob-body{
+    width:70%;
+}
+.form-group{
+    margin:30px 0 ;
+}

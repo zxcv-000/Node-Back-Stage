@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/detail.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img src="http://jx.1000phone.net/Public/assets/css/images/logo.png?1557903642">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">首页</a></li>
+                    <li><a href="#">列表</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" id="username">未登录</a></li>
+                    <li><a href="#" id="js_logout">退出</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <!-- 主题部分 -->
+    <!-- tabBar -->
+    <div class="container_detail">
+        <div class="tabbar">
+            <ul>
+                <li class="active">系统首页</li>
+                <li>职位列表</li>
+                <li>职位管理</li>
+            </ul>
+        </div>
+        <div class="content">
+            <div id="main"></div>
+        </div>
+        <!-- 模块框 -->
+        <div class="modal fade" tabindex="-1" role="dialog" id="jobModel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">请修改内容</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form id="modifyJob">
+                            <div class="form-group">
+                                <label for="job_modify_name">职位名称</label>
+                                <input type="text" class="form-control" id="job_modify_name" placeholder="请输入职位名称">
+                            </div>
+                            <div class="form-group">
+                                <label for="job_modify_price">薪资</label>
+                                <input type="text" class="form-control" id="job_modify_price" placeholder="薪资范围">
+                            </div>
+                            <div class="form-group">
+                                <label for="job_modify_ask">要求</label>
+                                <input type="text" class="form-control" id="job_modify_ask" placeholder="招聘要求">
+                            </div>
+                            <div class="form-group">
+                                <label for="company_modify_name">公司名称</label>
+                                <input type="text" class="form-control" id="company_modify_name" placeholder="请输入公司名称">
+                            </div>
+                            <div class="form-group">
+                                <label for="logo_modify">上传公司logo</label>
+                                <input type="file" id="logo_modify" multiple>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="modify_btn" data-dismiss="modal">修改</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
+<script src="../js/lib/jquery-1.11.3.js"></script>
+<script src="js/lib/bootstrap.min.js"></script>
+<script src="https://cdn.bootcss.com/js-cookie/2.1.3/js.cookie.min.js"></script>
+<script src="../js/js/tools.js"></script>
+<script src="../js/js/addJob.js"></script>
+<script src="../js/js/jobList.js"></script>
+<script src="../js/js/show.js"></script>
+<script src="../js/js/userInfo.js"></script>
+<script src="../js/js/supPage.js"></script>
